@@ -1,0 +1,28 @@
+# HTTP Server
+server:
+  port: ${PORT:8765}
+spring:
+  application:
+    name: accountsserver
+
+# Discovery Server Access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+#security:
+#  user:
+#    name: root
+#    password: password
+#  oauth2:
+#    client:
+#      clientId: accountsserver
+#      clientSecret: ${SERVICE_ACCOUNT_PASSWORD:accountsserver}
+#      accessTokenUri: http://localhost:9998/oauth/token
+#      grant-type: client_credentials
+#      scope: server
+#    resource:
+#      loadBalanced: true
+#      userInfoUri: http://localhost:9998/user
+

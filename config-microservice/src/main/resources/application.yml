@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/shared
+#  profiles: required by tomcat server
+  profiles:
+     active: native
+  security:
+    user:
+      password: ${CONFIG_SERVICE_PASSWORD:tezt}
+
+server:
+  port: 8888

@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: account-microservice
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8888
+      fail-fast: true
+      password: ${CONFIG_SERVICE_PASSWORD:tezt}
+      username: user
+#  bootstrap.yml is loaded before application.yml.
