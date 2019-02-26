@@ -9,6 +9,7 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 @EnableConfigServer
 @EnableDiscoveryClient
 public class MicroConfigApplication {
+
     public static void main(String[] args) {
         SpringApplication.run(MicroConfigApplication.class, args);
     }

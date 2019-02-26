@@ -7,13 +7,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import pl.com.mnemonic.pojo.Account;
 
-import javax.validation.Valid;
-import java.security.Principal;
-
-/**
- * @author Pawel Obrebski
- * @since 05.01.2018.
- */
 @RestController
 public class AccountController {
     private static final Logger log = LoggerFactory.getLogger(AccountController.class);
