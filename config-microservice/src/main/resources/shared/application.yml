@@ -1,0 +1,5 @@
+eureka:
+  client:
+#    needs actuator for every microservice!
+#    healthcheck:
+#      enabled: true
