@@ -4,7 +4,6 @@
 target/
 *.iml
 .idea/
-dbnavigator.xml
 misc.xml
 modules.xml
 workspace.xml
